@@ -16,7 +16,8 @@ related task references.
 - United States (Federal: FTC, COPPA; State: CCPA/CPRA, others)
   - California: CCPA/CPRA, CIPA (wiretap litigation), Automatic Renewal Law
     (CARL), Age-Appropriate Design Code Act (CAADCA, enjoined in part), Unruh
-    Civil Rights Act (accessibility)
+    Civil Rights Act (accessibility), CalOPPA (baseline privacy-policy
+    content law, no revenue threshold)
   - Florida: Florida Digital Bill of Rights (FDBR), FDUTPA, Florida
     Telephone Solicitation Act (FTSA), Florida Security of Communications Act
     (FSCA, wiretap litigation), HB 3 (Online Protections for Minors)
@@ -214,6 +215,151 @@ payment-link implementation.
 
 ---
 
+### COPPA — Children's Online Privacy Protection Act (USA, Federal)
+
+**Jurisdictions:** USA, federal (16 CFR Part 312; 15 U.S.C. §§6501–6505).
+
+**Key findings:**
+- Applies to operators of websites/online services **directed to children
+  under 13**, and separately to any operator (regardless of stated audience)
+  that has **actual knowledge** it is collecting personal information from a
+  child under 13.
+- "Directed to children" is a multi-factor test under 16 CFR §312.2 —
+  subject matter, visual content, use of animated characters/child-oriented
+  activities or incentives, music, language, presence of child models or
+  celebrities, empirical evidence of actual/intended audience composition,
+  etc. It is not satisfied or avoided by a developer's own label; it depends
+  on these objective factors.
+- 2025 amendments to the Rule took effect June 23, 2025; the amended
+  provisions carry a **compliance deadline of April 22, 2026**, after which
+  FTC enforcement actions can be brought under the new requirements
+  (expanded definition of personal information, new parental-consent
+  methods, stricter data security/retention obligations).
+- Requires verifiable parental consent before collecting, using, or
+  disclosing personal information from a child under 13 once COPPA is
+  triggered; requires reasonable data-security procedures for children's
+  data.
+- Feb. 2026: FTC issued a policy statement saying it will not bring COPPA
+  enforcement against operators that collect/use/disclose personal
+  information **solely to determine a user's age** via age-verification
+  technology — relevant if an app later adds age-gating.
+- **Practical read for a small consumer app with no child-directed content
+  and no age/birthdate collection at signup:** a "not directed to children
+  under 13, no actual knowledge of under-13 users" claim in a privacy policy
+  has a reasonable, verifiable basis on those facts — but re-verify if the
+  app's content, marketing, or signup flow changes (e.g., adds a birthdate
+  field, kid-oriented mascot/theming, or evidence of a child audience).
+
+**Sources:**
+- FTC, "Children's Online Privacy Protection Rule ('COPPA')": https://www.ftc.gov/legal-library/browse/rules/childrens-online-privacy-protection-rule-coppa
+- Federal Register, COPPA Rule final amendments (2025-04-22): https://www.federalregister.gov/documents/2025/04/22/2025-05904/childrens-online-privacy-protection-rule
+- eCFR, 16 CFR Part 312: https://www.ecfr.gov/current/title-16/chapter-I/subchapter-C/part-312
+- FTC press release, COPPA age-verification policy statement (2026-02-25): https://www.ftc.gov/news-events/news/press-releases/2026/02/ftc-issues-coppa-policy-statement-incentivize-use-age-verification-technologies-protect-children
+
+**Date researched:** 2026-08-05.
+**Volatility:** Moderate-high — 2025 amendments have a live compliance
+deadline (2026-04-22) that has likely already passed by the time this entry
+is reused; re-verify current enforcement posture and whether further
+amendments have issued. The age-verification safe-harbor policy statement is
+new (Feb. 2026) and could be revised.
+**Related tasks:** Brew Me Up (Coffee Shop Tracker) Disclaimer/Privacy Policy
+update, 2026-08-05 — see `proposals/nell-disclaimer-privacy-update-2026-08.md`
+in that project.
+
+---
+
+### CalOPPA — California Online Privacy Protection Act (baseline privacy-policy content law)
+
+**Jurisdictions:** California (Cal. Bus. & Prof. Code §§22575–22579).
+Distinct from and predating CCPA/CPRA — **no revenue or user-count
+threshold**, unlike CCPA, so it can apply to small/solo-developer operators
+that CCPA's size thresholds would exempt.
+
+**Key findings:**
+- Requires operators of commercial websites/online services that collect PII
+  from California residents to **conspicuously post a privacy policy**. A
+  2012 California AG announcement explicitly extended CalOPPA's application
+  to **mobile applications** for smartphones/tablets, not just websites.
+- A CalOPPA-compliant policy must disclose:
+  1. Categories of PII collected;
+  2. Categories of third parties the operator may share that PII with;
+  3. The process (if any) for a consumer to review and request changes to
+     their PII;
+  4. How the operator notifies users of material changes to the policy;
+  5. The policy's effective date.
+- A 2014 amendment added a requirement to disclose how the operator responds
+  to browser "Do Not Track" (DNT) signals, and whether third parties may
+  collect PII through the site/app.
+- Enforcement: supports a claim under California's Unfair Competition Law;
+  operator gets a 30-day cure period after notice of noncompliance, then
+  faces penalties up to $2,500 per violation.
+- **Verification note:** statute number and general content confirmed via
+  multiple independent secondary legal sources (IAPP, FindLaw, Pillsbury
+  Law); a direct fetch of the primary statutory text at
+  leginfo.legislature.ca.gov timed out twice during the 2026-08-05 research
+  session. Re-fetch primary text before relying on exact statutory wording
+  in a dispute.
+
+**Sources:**
+- Cal. Bus. & Prof. Code §§22575–22579: https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=BPC&sectionNum=22575.
+- FindLaw, Cal. Bus. & Prof. Code §22575: https://codes.findlaw.com/ca/business-and-professions-code/bpc-sect-22575/
+- IAPP, "What Do the New Disclosure Requirements Under CalOPPA Mean for Your Business?": https://iapp.org/news/a/what-do-the-new-disclosure-requirements-under-caloppa-mean-for-your-busines
+- Pillsbury Law, "California AG Issues New Privacy Policy and 'Do Not Track' Recommendations": https://www.pillsburylaw.com/en/news-and-insights/california-ag-issues-new-privacy-policy-and-do-not-track.html
+
+**Date researched:** 2026-08-05.
+**Volatility:** Low-moderate — statute itself is stable; re-check if a new
+CA AG guidance document or amendment surfaces. Primary text unread in this
+pass (see verification note) — treat as a gap to close before high-stakes
+reliance.
+**Related tasks:** Brew Me Up (Coffee Shop Tracker) Disclaimer/Privacy Policy
+update, 2026-08-05 — see `proposals/nell-disclaimer-privacy-update-2026-08.md`
+in that project.
+
+---
+
+### FTC Act Section 5 — Deceptive Privacy/Data-Handling Claims (USA, Federal)
+
+**Jurisdictions:** USA, federal (15 U.S.C. §45).
+
+**Key findings:**
+- FTC Act §5 prohibits "unfair or deceptive acts or practices in or
+  affecting commerce." The FTC's established enforcement position: **failing
+  to adhere to the specific steps, standards, and promises made in a privacy
+  notice is itself a deceptive practice**, independent of whether the
+  underlying data handling was otherwise reasonable (e.g., an "appropriate
+  safeguards" claim that didn't match actual practice was treated as
+  deceptive in an FTC action against Blackbaud).
+- The FTC has also brought standalone §5 **unfairness** claims (not just
+  deception) over unreasonable data-retention practices and inaccurate
+  breach notifications — a newer theory as of the sources reviewed.
+- **Practical read:** an absolute, unqualified claim in a privacy policy
+  (e.g., "deleted data cannot be recovered") that doesn't match a known,
+  real (even if narrow) technical exception creates avoidable deception
+  exposure. Advising a client to caveat such claims accurately, rather than
+  overstate completeness, is a defensible, low-cost risk-reduction
+  recommendation grounded in this enforcement pattern — not a requirement I
+  can assert with "you must," since no specific violation has occurred
+  absent a complaint/investigation.
+- I verified this general principle via law-firm secondary sources
+  summarizing FTC consent orders/actions, not by reading full consent-order
+  text myself in this pass — treat specific case citations in those
+  summaries as unread by me and re-verify before citing a specific matter by
+  name.
+
+**Sources:**
+- 15 U.S.C. §45 (FTC Act, Section 5): https://www.ftc.gov/legal-library/browse/statutes/federal-trade-commission-act
+- Perkins Coie, "FTC Brings First Standalone Section 5 Unfairness Claims for Unreasonable Data Retention and Inaccurate Breach Notice": https://perkinscoie.com/insights/update/ftc-brings-first-standalone-section-5-unfairness-claims-unreasonable-data-retention
+
+**Date researched:** 2026-08-05.
+**Volatility:** Low (statutory authority itself is stable) but enforcement
+theory/posture shifts with FTC leadership and priorities — re-check current
+enforcement focus before relying on this for a novel fact pattern.
+**Related tasks:** Brew Me Up (Coffee Shop Tracker) Disclaimer/Privacy Policy
+update, 2026-08-05 — see `proposals/nell-disclaimer-privacy-update-2026-08.md`
+in that project.
+
+---
+
 ### CCPA/CPRA — California Privacy (USA)
 
 **Jurisdictions:** California; applies to any business (including out-of-state
@@ -258,11 +404,18 @@ iPhone app publishers) meeting the threshold and collecting CA residents' data.
 - Butler Snow, "CCPA Regulations Amendments Effective January 1, 2026": https://www.butlersnow.com/news-and-events/ccpa-regulations-amendments-effective-january-1-2026-a-practical-roadmap-for-in-house-counsel
 
 **Date researched:** 2026-07-17 (refreshed; original entry undated — treat
-prior "will update" placeholder as superseded).
+prior "will update" placeholder as superseded). **In-app-accessibility point
+re-verified 2026-08-05**: confirmed via independent, more recent sources
+(Osano, Greenberg Traurig, Butler Snow) that the CPPA finalized this
+regulation package in September 2025, it took effect January 1, 2026, and
+the requirement changed from "may" to "must" link the privacy policy from
+the app's settings menu (in addition to the download page). No contrary
+development found as of 2026-08-05.
 **Volatility:** High (CPRA regs, GPC enforcement posture, and ADMT rules are
 actively evolving; re-check before any CA-facing app release, especially
 around January regulatory effective dates).
-**Related tasks:** TASK-Nell-1 (deep-dive: iPhone apps in CA/FL, 2026-07-17)
+**Related tasks:** TASK-Nell-1 (deep-dive: iPhone apps in CA/FL, 2026-07-17);
+Brew Me Up (Coffee Shop Tracker) Disclaimer/Privacy Policy update, 2026-08-05.
 
 ---
 
@@ -623,9 +776,10 @@ re-verify the FTC rule's status separately before combining the two in advice.
 ---
 
 (Additional topics will be added as Nell researches: Trademark, Patent Prior Art,
-App Store Rejection Appeals, COPPA (children under 13), Gambling Regulation,
-Health Claims Regulation, Export Controls, Tax/VAT, NDA Best Practices, EU
-Digital Markets Act as it affects iOS payment/distribution rules, etc.)
+App Store Rejection Appeals, Gambling Regulation, Health Claims Regulation,
+Export Controls, Tax/VAT, NDA Best Practices, EU Digital Markets Act as it
+affects iOS payment/distribution rules, etc. COPPA, CalOPPA, and FTC Act
+§5 deceptive-practices theory were added 2026-08-05.)
 
 ---
 
