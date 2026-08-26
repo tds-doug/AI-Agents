@@ -1,7 +1,7 @@
 # 17 — Implementation Guide (for the human supervisor, DJ)
 
 1. **Install.** Copy this directory to
-   `/Users/dj/Projects/AI-Wonder-Team/agents/uma-capability-pack/` and replace
+   `agents/uma-capability-pack/` and replace
    the body of `agents/uma.md` with `14-improved-agent-instructions.md`.
    Commit both; the pack is designed to live in git.
 2. **Confirm assumptions.** Review A-1…A-5 in file 01 and gates G1–G5 in

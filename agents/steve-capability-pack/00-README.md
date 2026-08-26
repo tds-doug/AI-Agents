@@ -22,7 +22,7 @@ only and stops, and still routes ordinary ambiguity to El Jefe per
 ## Installation
 Place this directory alongside Steve's instruction file:
 ```
-/Users/dj/Projects/AI-Wonder-Team/agents/
+agents/
 ├── steve.md                  ← keep existing frontmatter (name/description/tools/model);
 │                                replace the body below the frontmatter with
 │                                14-improved-agent-instructions.md's body

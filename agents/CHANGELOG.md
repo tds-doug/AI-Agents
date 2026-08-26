@@ -1,5 +1,14 @@
 # Changelog
 
+## 2026-08-25 — Public paths made portable
+
+- Replaced user-specific absolute filesystem paths with repository-, project-,
+  or workspace-relative references.
+- Removed all tracked absolute home-directory references from the public agent
+  files.
+- Updated cross-project research references without changing their substantive
+  findings.
+
 ## 2026-08-01 — Cross-AI agent discovery enabled
 
 - Added Codex-native `.codex/agents/*.toml` generation from the canonical

@@ -11,7 +11,7 @@ templates, training, assessment, and a governed improvement loop.
 ## Installation
 Place this directory alongside Uma's instruction file:
 ```
-/Users/dj/Projects/AI-Wonder-Team/agents/
+agents/
 ├── uma.md                  ← replace body with 14-improved-agent-instructions.md
 └── uma-capability-pack/    ← this directory
 ```

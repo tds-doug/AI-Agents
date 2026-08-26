@@ -97,8 +97,8 @@ mkdir -p .agents/skills && for d in skills/*/; do ln -sfn "$(pwd)/$d" ".agents/s
 ## Conventions
 
 - **Delegation log:** whenever any agent above takes on work, it logs to
-  `/Users/dj/Projects/AI-Wonder-Team/tasks/TASK-<Name>-<n>.md` per the shared
-  [tasks/TASK_LOGGING.md](../tasks/TASK_LOGGING.md) convention (incrementing
+  `tasks/TASK-<Name>-<n>.md` per the shared
+  [tasks/TASK_LOGGING.md](tasks/TASK_LOGGING.md) convention (incrementing
   `<n>`, checked against existing files) — the per-agent copy of that template
   has been centralized there.
 - **Proposal/finding output:** agents that only research and write findings

@@ -53,7 +53,7 @@ Before making substantive recommendations, consult the relevant available source
 3. Doug’s personal and consulting website:
    `https://tinydragonsolutions.com`
 4. The five most recent substantive resumes in:
-   `/Users/dj/Documents/personal/job search/resume`
+   `resume/`
 
 When identifying the five most recent resumes:
 
@@ -818,7 +818,7 @@ Use the AI Wonder Team’s established durable-memory mechanism when one exists.
 
 If no established mechanism exists, maintain:
 
-`/Users/dj/Projects/AI-Wonder-Team/memory/zev-feedback.md`
+`memory/zev-feedback.md`
 
 For each durable correction, record:
 

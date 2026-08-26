@@ -46,7 +46,7 @@ findings, not complete proposals.
 - **Aliases/keywords:** user guide, help center, documentation, in-app help, FAQ, troubleshooting, accessibility documentation, mobile app support
 - **Last verified:** 2026-07-17
 - **Freshness:** stable; re-check when major iOS versions (iOS 27+) introduce new accessibility requirements or help delivery patterns
-- **Related work:** `/Users/dj/Projects/Coffee Shop Tracker/Coffee Shop Tracker/ai-factory/proposals/user-guide-feedback-v1-rev2-to-v1-rev3-debra.md`, TASK-Debra-5; `/Users/dj/Projects/Coffee Shop Tracker/Coffee Shop Tracker/ai-factory/proposals/user-guide-feedback-v1-rev3-to-v1-rev4-debra.md`, TASK-Debra-6
+- **Related work:** `ai-factory/proposals/user-guide-feedback-v1-rev2-to-v1-rev3-debra.md`, TASK-Debra-5; `ai-factory/proposals/user-guide-feedback-v1-rev3-to-v1-rev4-debra.md`, TASK-Debra-6
 
 #### Findings
 
@@ -60,7 +60,7 @@ findings, not complete proposals.
 
 - **Industry best practices for iOS app documentation** (per Apple HIG, NN/G, Userpilot, industry sources): Use visual hierarchy and chunked content for scannability; step-by-step instructions with UI callouts; search and filtering for discoverability; FAQ and troubleshooting sections for completeness; annotated screenshots (images processed 60,000× faster than text); accessibility compliance (WCAG AA/AAA contrast, keyboard navigation, dynamic text sizing); multiple support channels (email, web, in-app); progressive disclosure (collapsible sections); and mobile-first responsive design. ([Apple HIG](https://developer.apple.com/design/human-interface-guidelines/offering-help), [NN/G Heuristic #10](https://www.nngroup.com/articles/help-and-documentation/), [Userpilot In-App Resource Center](https://userpilot.com/blog/in-app-resource-center/), verified 2026-07-17)
 
-- **Brew Me Up User Guide (v1-rev4)** [UPDATED 2026-07-17]: Restructured to 8 main sections (Overview → Getting Started [A. Quick Start] → Navigation [A–E subsections] → Data Sync → Glossary → Troubleshooting → FAQ → Getting Help). Verified improvements over v1-rev3: (1) TOC reorganized into task-based hierarchy matching Figma/Waze patterns; (2) "What's new" is plain-language user-focused bullets (zero internal filename references); (3) screenshots render at uniform aspect-ratio 202/440 and fixed width 230px, with onboarding screenshots correctly placed under Getting Started > First Launch; (4) "Common icons at a glance" section removed entirely. Strengths retained from v1-rev3: built-in TOC keyword filter (exceeds baseline search), WCAG AAA contrast ratios with documented specifications, responsive two-column desktop / single-column mobile layout, collapsible progressive disclosure, skip link and focus states. Overall structure aligns with or exceeds Figma and Waze baselines. ([user-guide-feedback-v1-rev3-to-v1-rev4-debra.md](/Users/dj/Projects/Coffee%20Shop%20Tracker/Coffee%20Shop%20Tracker/ai-factory/proposals/user-guide-feedback-v1-rev3-to-v1-rev4-debra.md), verified 2026-07-17)
+- **Brew Me Up User Guide (v1-rev4)** [UPDATED 2026-07-17]: Restructured to 8 main sections (Overview → Getting Started [A. Quick Start] → Navigation [A–E subsections] → Data Sync → Glossary → Troubleshooting → FAQ → Getting Help). Verified improvements over v1-rev3: (1) TOC reorganized into task-based hierarchy matching Figma/Waze patterns; (2) "What's new" is plain-language user-focused bullets (zero internal filename references); (3) screenshots render at uniform aspect-ratio 202/440 and fixed width 230px, with onboarding screenshots correctly placed under Getting Started > First Launch; (4) "Common icons at a glance" section removed entirely. Strengths retained from v1-rev3: built-in TOC keyword filter (exceeds baseline search), WCAG AAA contrast ratios with documented specifications, responsive two-column desktop / single-column mobile layout, collapsible progressive disclosure, skip link and focus states. Overall structure aligns with or exceeds Figma and Waze baselines. ([user-guide-feedback-v1-rev3-to-v1-rev4-debra.md](ai-factory/proposals/user-guide-feedback-v1-rev3-to-v1-rev4-debra.md), verified 2026-07-17)
 
 #### Changes and superseded claims
 
@@ -73,7 +73,7 @@ findings, not complete proposals.
 - **Aliases/keywords:** coffee tracker, coffee logger, specialty coffee app, café discovery, coffee journaling, bean tracking, brew logging
 - **Last verified:** 2026-07-16
 - **Freshness:** moderately volatile; re-check when new entrants launch or major features are announced
-- **Related work:** `/Users/dj/Projects/Coffee Shop Tracker/proposals/debra-competitive-review.md`, TASK-Debra-1
+- **Related work:** `proposals/debra-competitive-review.md`, TASK-Debra-1
 
 #### Findings
 
@@ -132,7 +132,7 @@ None yet—initial research entry.
 - **Aliases/keywords:** route planner, trip planner, points of interest along route, search along route, multi-stop routing, coffee stops discovery, roadside attractions
 - **Last verified:** 2026-07-16
 - **Freshness:** moderately volatile; re-check pricing, plan limits, and feature releases annually
-- **Related work:** `/Users/dj/Projects/Coffee Shop Tracker/Coffee Shop Tracker/ai-factory/proposals/coffee-crawl-review-v1-debra.md`, TASK-Debra-2
+- **Related work:** `ai-factory/proposals/coffee-crawl-review-v1-debra.md`, TASK-Debra-2
 
 #### Findings
 
@@ -205,7 +205,7 @@ None yet—initial research entry (2026-07-16).
 - **Aliases/keywords:** iCloud sync, account deletion, App Store Guideline 5.1.1, onboarding carousel, value proposition screens, recent searches, search history, autocomplete UX
 - **Last verified:** 2026-07-17
 - **Freshness:** moderately volatile (App Store guideline text and competitor feature sets can change); re-check before compliance-sensitive decisions
-- **Related work:** `/Users/dj/Projects/Coffee Shop Tracker/Coffee Shop Tracker/proposals/debra-usability-test-2026-07-17.md`, TASK-Debra-7; `/Users/dj/Projects/Coffee Shop Tracker/Coffee Shop Tracker/proposals/debra-signup-field-requirements-2026-07-17.md`, TASK-Debra-8
+- **Related work:** `proposals/debra-usability-test-2026-07-17.md`, TASK-Debra-7; `proposals/debra-signup-field-requirements-2026-07-17.md`, TASK-Debra-8
 
 #### Findings
 
@@ -217,7 +217,7 @@ None yet—initial research entry (2026-07-16).
 
 - **Multi-slide onboarding carousels (3–5 slides) that show rather than tell the app's value proposition** are a standard pattern for apps with real feature depth to preview (gamification, unique tools) before or alongside account/profile setup. ([UXCam – 12 Apps with Great User Onboarding](https://uxcam.com/blog/10-apps-with-great-user-onboarding/), [Userpilot – Mobile App Onboarding Flow](https://userpilot.com/blog/mobile-app-onboarding/), verified 2026-07-17)
 
-- **Brew Me Up (as of 2026-07-17)**: sync requires manual email entry + a Settings toggle (no iCloud auto-sync); silently creates an anonymous server-side account via `AuthService.bootstrapAnonymous` the first time sync is enabled, with **no in-app account/data deletion found anywhere in source** (`grep` for delete-account patterns returns zero matches) — flagged as a possible App Store Guideline 5.1.1(v) exposure pending independent compliance review. Search (`SearchView.swift`) has no recent-searches/history and wipes query+scope on every tab exit. Onboarding is a single data-entry screen with no feature preview. Spending Analytics (previously a gap per the 2026-07-16 competitive review) is now implemented in Profile → Insights. ([debra-usability-test-2026-07-17.md](/Users/dj/Projects/Coffee%20Shop%20Tracker/Coffee%20Shop%20Tracker/proposals/debra-usability-test-2026-07-17.md), verified 2026-07-17)
+- **Brew Me Up (as of 2026-07-17)**: sync requires manual email entry + a Settings toggle (no iCloud auto-sync); silently creates an anonymous server-side account via `AuthService.bootstrapAnonymous` the first time sync is enabled, with **no in-app account/data deletion found anywhere in source** (`grep` for delete-account patterns returns zero matches) — flagged as a possible App Store Guideline 5.1.1(v) exposure pending independent compliance review. Search (`SearchView.swift`) has no recent-searches/history and wipes query+scope on every tab exit. Onboarding is a single data-entry screen with no feature preview. Spending Analytics (previously a gap per the 2026-07-16 competitive review) is now implemented in Profile → Insights. ([debra-usability-test-2026-07-17.md](proposals/debra-usability-test-2026-07-17.md), verified 2026-07-17)
 
 - **Brew Me Up onboarding field requirements — CORRECTED 2026-07-17 (supersedes the "verify this yourself" uncertainty in the entry above)**: Direct read of `OnboardingView.canSave` (`Coffee_Shop_TrackerApp.swift` lines 344–453) confirms the "Get Started" button is gated **only** on Name being non-empty; Email has no presence requirement, only an optional format check if the user types something. Both fields have real downstream use (Name displays in the Profile header via `savedName`; Email pre-fills Settings → Personal Info for the still-opt-in Sync feature), so this is not vestigial collection — but the UI gives no visual signal that Email is optional (identical styling to Name, no "(optional)" label), which is the likely source of user confusion/complaints that "the app requires both." Fix proposed: add an "(optional)" label or skip affordance to Email, no logic change needed.
 
@@ -265,7 +265,7 @@ None yet—initial research entry.
 - **Aliases/keywords:** food tracker, restaurant discovery, check-in app, food photography, social dining, restaurant collections, food sharing
 - **Last verified:** 2026-07-28
 - **Freshness:** moderately volatile; re-check feature lists, pricing, social graph changes annually
-- **Related work:** `/Users/dj/Projects/Glazed & Rated/proposals/debra-competitive-review.md`, TASK-Debra-10
+- **Related work:** `proposals/debra-competitive-review.md`, TASK-Debra-10
 
 #### Findings
 

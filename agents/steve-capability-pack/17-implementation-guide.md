@@ -1,7 +1,7 @@
 # 17 — Implementation Guide (for the human supervisor, DJ)
 
 1. **Install.** This directory is already at
-   `/Users/dj/Projects/AI-Wonder-Team/agents/steve-capability-pack/`. Replace
+   `agents/steve-capability-pack/`. Replace
    the **body** of `agents/steve.md` (everything below the YAML frontmatter)
    with the body of `14-improved-agent-instructions.md`. **Keep `steve.md`'s
    existing frontmatter unchanged** (`name`, `description`, `tools: Bash,
